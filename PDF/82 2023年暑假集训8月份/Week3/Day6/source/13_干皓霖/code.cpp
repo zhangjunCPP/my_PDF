@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int a, b;
+
+int main () {
+	freopen ("code.in", "r", stdin);
+	freopen ("code.out", "w", stdout);
+	scanf ("%d %d", &a, &b);
+	for (int i = 1; i < max (a, b); ++i)
+		printf ("0");
+	for (int i = 1; i < min (a, b); ++i)
+		printf ("1");
+	return 0;
+} 
